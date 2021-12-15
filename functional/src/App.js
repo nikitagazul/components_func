@@ -1,5 +1,4 @@
 import './App.css';
-import './main.css';
 import propTypes from 'prop-types';
 import ItemModel from './models/ItemModel';
 
