@@ -1,5 +1,7 @@
 import './App.css';
 import './main.css';
+import propTypes from 'prop-types';
+import ItemModel from './models/ItemModel';
 
 function ShopItemFunc(props){
   const {data} = props;
@@ -21,6 +23,7 @@ function ShopItemFunc(props){
       </div>
     </div>
   );
+
 }
 
 function App() {
@@ -44,6 +47,10 @@ function App() {
       </div>
     </div>
   );
+}
+
+ShopItemFunc.propTypes = {
+  data: propTypes.instanceOf(ItemModel).isRequired
 }
 
 export default App;
